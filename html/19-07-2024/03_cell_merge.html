@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- for merge cells use rowspan and colspan and both attribute effected in <td> and <th> tag. -->
+    <!-- when use rowspan remove cells from next rows. -->
+    <!-- when use colspan remove cells from that effected row -->
+    <table border="1" cellpadding="5px">
+        <colgroup>
+            <col style="background-color: aquamarine;">
+            <col style="background-color: #4343f1;" span="2">
+            <col style="background-color: burlywood;">
+        </colgroup>
+
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red <br> Eyes</th>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>Female</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        table is a collection of rows and columns
+
+        for create table = <table>
+        for create row   = <tr> 
+        for create table column/data = <td>
+        for create table column heading = <th> 
+        for give title of table = <caption>
+        for give table body = <tbody>
+        for set table footer = <tfoot>
+        for saparation = <thead>
+
+        cellpadding => give a space between content and border.
+        cellspacing => give a spacing between cells.
+        rules => apply single border. but when it apply cellspacing not effected.
+    -->
+    <table border="1" cellpadding="5px" cellspacing="10px" rules="all"
+        style="height: 200px; width: 400px; text-align: center;">
+        <caption>User Data</caption>
+        <!-- <thead id="title"> -->
+        <tbody id="title">
+            <tr style="background-color: coral; color: white;">
+                <th>Name</th>
+                <th>Job title</th>
+                <th>Email Address</th>
+            </tr>
+        </tbody>
+        <!-- </thead> -->
+        <tbody id="data">
+            <tr>
+                <td>Pooja</td>
+                <td>Accountant</td>
+                <td>pooja@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>IT</td>
+                <td>rohan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Tapan</td>
+                <td>Business Ad.</td>
+                <td>Tapan@gmail.com</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot> -->
+        <tr>
+            <td>Tapan</td>
+            <td>Business Ad.</td>
+            <td>Tapan@gmail.com</td>
+        </tr>
+        <!-- </tfoot> -->
+    </table>
+</body>
+
+</html>
