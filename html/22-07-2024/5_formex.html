@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <!-- use to select one option from multiple, give name compulsory and be equal -->
+            <span>Gender : </span>
+
+            <input type="radio" name="gen" id="m" checked>
+            <label for="m">Male</label>
+            <input type="radio" name="gen" id="f">
+            <label for="f">Female</label>
+        </div>
+
+        <div>
+            <!-- use to multiple option selection -->
+            <span>Select Subject : </span>
+            <input type="checkbox" name="" id="c1">
+            <label for="c1">java</label>
+            <input type="checkbox" name="" id="c2">
+            <label for="c2">javascript</label>
+            <input type="checkbox" name="" id="c3">
+            <label for="c3">css</label>
+        </div>
+
+        <div>
+            <label for="">Address</label>
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+        </div>
+
+        <div>
+            <!-- dropdown list -->
+            <label for="">City : </label>
+            <!-- multiple size="3"  -->
+            <select name="" id="">
+                <option value="">----select----</option>
+                <optgroup label="Gujarat"></optgroup>
+                <option value="">Surat</option>
+                <option value="">Bharuch</option>
+                <option value="">Baroda</option>
+                <option value="">Navsari</option>
+                <optgroup label="Maharastra"></optgroup>
+                <option value="">Surat</option>
+                <option value="">Bharuch</option>
+                <option value="">Baroda</option>
+                <option value="">Navsari</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="search" name="" id="" placeholder="Search here..." list="mobilelist">
+            <!-- dependent tag -->
+            <datalist id="mobilelist">
+                <option value="Apple"></option>
+                <option value="Samsung"></option>
+                <option value="Oppo"></option>
+                <option value="Vivo"></option>
+            </datalist>
+        </div>
+    </form>
+</body>
+
+</html>

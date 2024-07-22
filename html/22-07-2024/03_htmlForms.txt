@@ -1,0 +1,8 @@
+there are 4 elements of html forms : 
+1) form 
+2) textarea 
+3) input 
+4) select-option 
+
+5) label 
+6) datalist 
