@@ -1,0 +1,13 @@
+1. xampp download and install 
+2. wordpress download from wordpress.org
+
+3. when wp download it is in zip file
+4. extract zip 
+5. copy wordpress and paste in c:/xampp/htdocs 
+6. rename wp folder
+
+7. run xampp
+8. start apache and mysql server
+9. open both admin.
+10. create a database with any name
+11. go on xampp dashboard and type in url localhost/dashboard insted of localhost/wp_folder_name 
