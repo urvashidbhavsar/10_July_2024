@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes are start from : sign */
+        /* .link1:link { */
+        .link1:any-link {
+            color: blue;
+        }
+
+        .link2:active {
+            color: green;
+        }
+
+        .link3:visited {
+            color: powderblue;
+        }
+
+        .link4:hover {
+            color: maroon;
+        }
+
+        button {
+            color: white;
+            background-color: darkcyan;
+            border: 1px solid darkcyan;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: darkcyan;
+        }
+
+        button:focus {
+            box-shadow: 0 0 5px black;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="link1">Click Here</a>
+    <a href="#" class="link2">Click Here</a>
+    <a href="#" class="link3">Click Here</a>
+    <a href="#" class="link4">Click Here</a>
+
+    <button>Click here</button>
+
+    <input type="text" name="" id="">
+</body>
+
+</html>

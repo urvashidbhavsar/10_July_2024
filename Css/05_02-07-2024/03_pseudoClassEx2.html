@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* border-collapse: separate; default  */
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: brown;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightpink;
+        }
+
+        tr:first-child {
+            background-color: black;
+        }
+
+        tr:last-child {
+            background-color: red;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .box:nth-child(1) {
+            background-color: aqua;
+        }
+
+        .box:nth-child(2) {
+            background-color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>No</td>
+            <td>Name</td>
+            <td>Position</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>Management</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>Management</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>Management</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>Management</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Data : 4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

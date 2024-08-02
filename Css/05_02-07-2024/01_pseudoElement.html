@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo element start with :: sign */
+        h1::after {
+            content: "\1F923";
+        }
+
+        h1::before {
+            content: "\1F923";
+        }
+
+        div {
+            width: 400px;
+            padding: 30px;
+            border: 1px solid black;
+        }
+
+        div::first-line {
+            color: red;
+        }
+
+        div::first-letter {
+            font-size: 30px;
+        }
+
+        ::selection {
+            background-color: palevioletred;
+            color: white;
+        }
+
+        li::marker {
+            font-size: 30px;
+            color: green;
+        }
+
+        ::placeholder {
+            font-size: 12px;
+            text-align: center;
+            color: red;
+        }
+
+        input[type="file"]::-webkit-file-upload-button {
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad exercitationem maiores suscipit quam
+        soluta, fuga ipsam perferendis magni eum dolorem veritatis ex pariatur vero, nihil, id ab porro hic.
+    </div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+
+    <input type="text" name="" id="" placeholder="Enter name">
+    <input type="file" name="" id="">
+</body>
+
+</html>

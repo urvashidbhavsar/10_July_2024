@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* relative = parent
+            absolute = child
+            z-index = set element priority as per layer wise.
+        */
+        .parent {
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .child {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+
+        .child1 {
+            background-color: teal;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .child2 {
+            background-color: salmon;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .child3 {
+            background-color: rebeccapurple;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+        <div class="child child3"></div>
+    </div>
+</body>
+
+</html>
