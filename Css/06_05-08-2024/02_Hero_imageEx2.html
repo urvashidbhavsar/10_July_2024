@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .heroimage {
+            background: url(https://c0.wallpaperflare.com/preview/324/740/911/closeup-communication-computer-connection.jpg) no-repeat;
+            background-size: cover;
+            padding: 180px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* create a layer between bgimage and text */
+        .heroimage::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* background-color: rgba(0, 0, 0, 0.7); */
+            background: linear-gradient(50deg, rgb(162, 23, 232, 0.7), rgb(135, 2, 80, 0.7));
+            z-index: -1;
+        }
+
+        .text {
+            text-align: center;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            text-transform: capitalize;
+            padding: 10px 0;
+        }
+
+        p {
+            color: white;
+            width: 50%;
+            margin: auto;
+            padding: 10px 0;
+        }
+
+        .btngroup {
+            padding: 10px 0;
+
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 15px;
+            background-color: darkslategrey;
+            color: white;
+            border: 1px solid darkslategrey;
+        }
+
+        .btn2:hover {
+            background-color: transparent;
+            color: darkslategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heroimage">
+        <div class="text">
+            <h1>find your perfect tutor</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos dolorem assumenda corrupti aut
+                quis laborum veritatis rerum repellat. Nisi quidem optio eligendi cum officiis illum facere unde
+                necessitatibus nesciunt?
+            </p>
+            <div class="btngroup">
+                <button class="btn1">Find Tutor</button>
+                <button class="btn2">Read More <i class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

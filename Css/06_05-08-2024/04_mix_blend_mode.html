@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: relative;
+        }
+
+        .box {
+            height: 250px;
+            width: 250px;
+        }
+
+        .box2 {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            mix-blend-mode: darken;
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">
+            <img src="https://live.staticflickr.com/4232/35623383532_31c9ccf0f4_h.jpg" alt="">
+        </div>
+        <div class="box box2">
+            <img src="https://getwallpapers.com/wallpaper/full/6/6/9/419168.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
