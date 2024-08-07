@@ -1,0 +1,11 @@
+how to show your element on page.
+
+none, 
+block (default),
+inline,
+inline-block,
+flex
+inline-flex
+grid
+inline-grid
+table etc..

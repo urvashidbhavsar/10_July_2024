@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .box:nth-child(even) {
+            background-color: aqua;
+        }
+
+        .box:nth-child(odd) {
+            background-color: chocolate;
+        }
+
+        .box:nth-child(1) {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+        }
+
+        .box:nth-child(2) {
+            flex: 2 1 0%;
+        }
+
+        .box:nth-child(3) {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

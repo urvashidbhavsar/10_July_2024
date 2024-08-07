@@ -1,0 +1,18 @@
+set value flexibally in a row or box.
+
+list of property which only effected while appling flex.
+
+flex-grow (child)
+flex-shrink (child)
+flex-basis (child)
+flex (child)
+flex-direction (parent) 
+flex-wrap (parent)
+flex-flow (parent)
+justify-content (parent)
+align-items (parent)
+align-self (child)
+align-content (parent)
+row-gap (parent)
+column-gap (parent)
+gap (parent)

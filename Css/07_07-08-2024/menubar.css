@@ -1,0 +1,73 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* 
+header {
+    background-color: lightcoral;
+} */
+
+.container {
+    max-width: 1200px;
+    margin   : auto;
+}
+
+header .navbar {
+    display    : flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    flex: 0.5;
+}
+
+header .navbar .logo img {
+    width: 100px;
+}
+
+header .navbar .nav {
+    display        : flex;
+    align-items    : center;
+    flex           : 1;
+    justify-content: space-between;
+}
+
+header .navbar .nav ul {
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+}
+
+header .navbar .nav ul li {
+    padding: 10px;
+}
+
+header .navbar .nav ul li a {
+    color         : blue;
+    font-weight   : 600;
+    text-transform: uppercase;
+}
+
+header .navbar .nav .subbtn button {
+    background-color: olive;
+    color           : white;
+    padding         : 10px 30px;
+    border          : 1px solid olive;
+    border-radius   : 5px;
+    letter-spacing  : 1px;
+    text-transform  : uppercase;
+}
