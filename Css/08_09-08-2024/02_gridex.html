@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            /* grid-template-rows: ; */
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns: 1fr 2fr 1fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            /* show effects in fix value */
+            justify-items: center;
+            /* show effects in auto value */
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+
+</html>

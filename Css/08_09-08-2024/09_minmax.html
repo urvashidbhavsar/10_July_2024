@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            /* grid-template-columns: repeat(3, max-content); */
+            /* grid-template-columns: minmax(50px, 100px); */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            font-size: 50px;
+            background-color: chocolate;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">12</div>
+        <div class="box">111</div>
+        <div class="box">666</div>
+        <div class="box">6</div>
+    </div>
+</body>
+
+</html>
