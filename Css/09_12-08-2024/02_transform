@@ -1,0 +1,19 @@
+1. rotate function 
+    rotate, rotateX, rotateY, rotateZ, rotate3d
+
+2. scale function = zooming
+    scale, scaleX, scaleY, scaleZ, scale3d 
+
+3. skew function = strech type
+    skew, skewX, skewY 
+
+4. translate function = movement
+    translate, translateX, translateY, translateZ, translate3d
+
+5. matrix function 
+    matrix, matrix3d
+
+6. perspective function = view 
+    perspective
+
+    for 3d : https://ramlmn.github.io/visualizing-matrix3d/
