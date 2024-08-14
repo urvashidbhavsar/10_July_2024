@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            background-color: teal;
+            margin: 200px auto;
+            border-radius: 50%;
+            clip-path: polygon(50% 50%, 50% 50%, 100% 0, 100% 100%, 50% 50%, 50% 50%, 0 100%, 0 0);
+            animation: rotate 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

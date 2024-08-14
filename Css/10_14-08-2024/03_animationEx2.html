@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heartShape {
+            height: 250px;
+            width: 250px;
+            margin: 150px auto;
+            position: relative;
+            animation: beat 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+        }
+
+        .dimand {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            height: 150px;
+            width: 150px;
+            background-color: #6a00ff;
+            transform: rotate(45deg);
+        }
+
+        .circle {
+            height: 165px;
+            width: 150px;
+            background-color: #6a00ff;
+            border-radius: 50%;
+            position: absolute;
+            top: 21px;
+        }
+
+        .circle1 {
+            left: -21px;
+        }
+
+        .circle2 {
+            right: -18px;
+        }
+
+        @keyframes beat {
+            0% {
+                scale: 0.7;
+            }
+
+            100% {
+                scale: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heartShape">
+        <div class="dimand"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+    </div>
+</body>
+
+</html>

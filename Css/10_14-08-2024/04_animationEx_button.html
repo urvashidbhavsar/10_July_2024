@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            padding: 15px 30px;
+            font-size: 22px;
+            background-color: olive;
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .btn:active {
+            scale: 0.95;
+        }
+
+        .btn:hover {
+            animation: btnmove 0.8s ease infinite alternate;
+        }
+
+        @keyframes btnmove {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Click here</button>
+</body>
+
+</html>
