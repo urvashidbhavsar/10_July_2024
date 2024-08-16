@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        h1 {
+            font-size: 50px;
+            font-family: sans-serif;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+        }
+
+        h1::after {
+            content: "";
+            height: 5px;
+            width: 150px;
+            display: inline-block;
+            background: linear-gradient(to right, red, green);
+            margin: 13px 8px;
+        }
+
+        h1::before {
+            content: "";
+            height: 5px;
+            width: 150px;
+            display: inline-block;
+            background: linear-gradient(to left, red, green);
+            margin: 13px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="animate__animated animate__rubberBand">About Us</h1>
+</body>
+
+</html>

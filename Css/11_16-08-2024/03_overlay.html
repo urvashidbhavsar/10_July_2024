@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        .imageOverlay {
+            width: 400px;
+            margin: auto;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            width: 400px;
+            vertical-align: middle;
+        }
+
+        .cameraicon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: grid;
+            place-content: center;
+            /* transform: scaleY(0); */
+            transform: scale(0);
+            /* transform-origin: bottom; */
+            transition: 0.8s ease;
+        }
+
+        .cameraicon i {
+            font-size: 30px;
+        }
+
+        .icon {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.496);
+            backdrop-filter: blur(10px);
+            display: grid;
+            place-content: center;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: 0.8s ease;
+        }
+
+        .imageOverlay:hover .cameraicon {
+            transform: scale(1);
+            background-color: rgba(0, 0, 0, 0.775);
+            /* transform: scale(1) rotateY(360deg); */
+            /* transform: scale(1) skewX(180deg); */
+        }
+
+        .imageOverlay:hover .icon {
+            transform: scale(1);
+            transition-delay: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageOverlay">
+        <img src="https://images.pexels.com/photos/225157/pexels-photo-225157.jpeg?cs=srgb&dl=pexels-fox-1004-58267-225157.jpg&fm=jpg"
+            alt="">
+
+        <div class="cameraicon">
+            <div class="icon">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
