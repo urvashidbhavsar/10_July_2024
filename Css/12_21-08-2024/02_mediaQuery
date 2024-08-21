@@ -1,0 +1,14 @@
+- use to make website responsive. 
+
+rules 
+
+@media screen{}
+
+mobile devices  => < 550px
+
+mobile screen  =            max-width : 576px
+                            min-width : 576px 
+tablet screen =             min-width : 768px 
+mini leptop =               min-width : 992px 
+large screen leptop =       min-width : 1200px = 1140px
+extra large screen leptop = min-width : 1400px 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /* use @rules */
+        @media (max-width:576px) {
+            p {
+                background-color: darkcyan;
+            }
+        }
+
+        @media (min-width:576px) {
+            p {
+                background-color: salmon;
+            }
+        }
+
+        @media (min-width:768px) {
+            p {
+                background-color: darkgreen;
+            }
+        }
+
+        @media (min-width:992px) {
+            p {
+                background-color: slateblue;
+            }
+        }
+
+        @media (min-width:1200px) {
+            p {
+                background-color: gold;
+            }
+        }
+
+        @media (min-width:1400px) {
+            p {
+                background-color: darkblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla aliquam necessitatibus eum explicabo praesentium
+        nostrum, molestiae in pariatur, fuga saepe repudiandae illum quibusdam veritatis corrupti. Corporis molestias
+        totam illum nostrum.
+    </p>
+</body>
+
+</html>
