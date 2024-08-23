@@ -60,9 +60,10 @@ img {
 
 .aboutUs .about-text li::before {
     /* content: "\1F537"; */
-    content      : "\f058";
-    font-family  : "Font Awesome 6 Free";
-    color        : red;
+    /* content      : "\f058"; */
+    /* font-family  : "Font Awesome 6 Free"; */
+    content: "😎";
+    color  : blue;
     padding-right: 10px;
 }
 

@@ -1,0 +1,79 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color          : white;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background     : url(https://wallpapers.com/images/featured/ultra-hd-wazf67lzyh5q7k32.jpg) no-repeat top;
+    background-size: cover;
+}
+
+.setup {
+    width          : fit-content;
+    padding        : 30px;
+    margin         : 140px auto;
+    backdrop-filter: blur(20px);
+    box-shadow     : 0 0 15px rgb(22, 22, 22);
+}
+
+h1 {
+    text-align    : center;
+    color         : white;
+    letter-spacing: 2px;
+}
+
+.row {
+    padding        : 7px 0;
+    display        : flex;
+    justify-content: center;
+}
+
+input[type="text"],
+[type="password"] {
+    height          : 30px;
+    width           : 300px;
+    padding         : 4px 8px;
+    font-size       : 16px;
+    background-color: transparent;
+    border          : none;
+    border-bottom   : 2px solid white;
+    color           : white;
+    letter-spacing  : 2px;
+}
+
+.icon {
+    height       : 30px;
+    width        : 30px;
+    border-bottom: 2px solid white;
+    padding      : 4px;
+    display      : grid;
+    place-content: center;
+    color        : white;
+    font-size    : 19px;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+::placeholder {
+    color         : white;
+    letter-spacing: 2px;
+}
+
+button {
+    background-color: crimson;
+    color           : white;
+    border-radius   : 5px;
+    border          : 2px solid crimson;
+    cursor          : pointer;
+    padding         : 10px 30px;
+    font-size       : 17px;
+}
