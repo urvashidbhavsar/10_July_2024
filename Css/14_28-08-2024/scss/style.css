@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+.imgscale {
+  border: 2px solid black;
+  width: 400px;
+  margin: 50px auto;
+  position: relative;
+}
+.imgscale img {
+  width: 400px;
+  vertical-align: middle;
+  filter: brightness(0.5);
+}
+.imgscale .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-content: center;
+}
+.imgscale .text h1 {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

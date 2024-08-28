@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+// variable
+@width :400px;
+
+// nesting
+.imgscale {
+    border  : 2px solid black;
+    width   : @width;
+    position: relative;
+    margin  : 50px auto;
+
+    img {
+        width         : @width;
+        vertical-align: middle;
+    }
+
+    .text {
+        position: absolute;
+        top     : 0;
+
+        h1 {
+            text-align: center;
+        }
+    }
+}
