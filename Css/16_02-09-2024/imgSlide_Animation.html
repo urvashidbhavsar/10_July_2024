@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .imgSlide {
+            display: flex;
+            width: 1370px;
+            overflow: hidden;
+        }
+
+        /* .slider {
+            float: left;
+        } */
+
+        .slide1 {
+            animation: slide 15s ease infinite 2s;
+        }
+
+        .slide2 {
+            animation: slide 15s ease infinite 2s;
+        }
+
+        .slide3 {
+            animation: slide 15s ease infinite 2s;
+        }
+
+        .slide4 {
+            animation: slide 15s ease infinite 2s;
+        }
+
+        img {
+            height: 600px;
+            width: 1370px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            10% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-100vw);
+            }
+
+            40% {
+                transform: translateX(-100vw);
+            }
+
+            50% {
+                transform: translateX(-200vw);
+            }
+
+            70% {
+                transform: translateX(-200vw);
+            }
+
+            80% {
+                transform: translateX(-300vw);
+            }
+
+            90% {
+                transform: translateX(-300vw);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+
+            /* 0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imgSlide">
+        <div class="slider slide1">
+            <img src="https://wallpapers.com/images/featured/high-resolution-gfinds1akzwf6vcq.jpg" alt="">
+        </div>
+        <div class="slider slide2">
+            <img src="https://speckyboy.com/wp-content/uploads/2020/11/high-resolution-4k-desktop-wallpaper-13.jpg"
+                alt="">
+        </div>
+        <div class="slider slide3">
+            <img src="https://speckyboy.com/wp-content/uploads/2020/11/high-resolution-4k-desktop-wallpaper-06.jpg"
+                alt="">
+        </div>
+        <div class="slider slide4">
+            <img src="https://live.staticflickr.com/3841/15200317246_487f6a3b87_h.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
