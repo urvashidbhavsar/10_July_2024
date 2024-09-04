@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {
+            height: 300px;
+            width: 300px;
+        }
+
+        rect {
+            fill: chocolate;
+            stroke: black;
+            stroke-width: 3px;
+            stroke-dasharray: 13;
+            stroke-opacity: 0.8;
+            stroke-dashoffset: 20;
+            stroke-linecap: square;
+        }
+
+        circle {
+            fill: magenta;
+        }
+
+        line {
+            stroke: black;
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <svg>
+        <rect x="20" y="20" height="100px" width="100px"></rect>
+
+        <circle cx="200" cy="200" r="60"></circle>
+
+        <text x="200" y="50">Hello world</text>
+    </svg>
+
+    <svg>
+        <line x1="50" y1="50" x2="200" y2="50"></line>
+    </svg>
+</body>
+
+</html>

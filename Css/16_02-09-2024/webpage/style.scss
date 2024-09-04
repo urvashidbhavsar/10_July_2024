@@ -2,6 +2,7 @@
     margin    : 0;
     padding   : 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 // variable for colors
@@ -480,5 +481,10 @@ ul {
                 }
             }
         }
+.top {
+    position: fixed;
+    bottom  : 20px;
+    right   : 20px;
+}
     }
 }
