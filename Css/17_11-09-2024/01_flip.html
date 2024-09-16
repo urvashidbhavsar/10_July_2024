@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            height: auto;
+            width: 400px;
+            margin: 150px auto;
+            position: relative;
+        }
+
+        .card img {
+            max-width: 100%;
+            vertical-align: middle;
+            filter: brightness(0.7);
+        }
+
+        .card .front {
+            transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #3908089b;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            color: white;
+            text-shadow: 0 0 25px black;
+            transform: rotateY(-180deg);
+            opacity: 0;
+            transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) transform;
+        }
+
+        .card:hover .front {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .back {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="front">
+            <img src="https://media.istockphoto.com/id/1351158595/photo/florist-making-fashion-modern-bouquet-of-different-flowers.jpg?s=612x612&w=0&k=20&c=uxB6FE1W0Iue2qrXW_CPTEgJLcgvT7jlvqyW1oTDnXk="
+                alt="">
+        </div>
+        <div class="back">
+            <h1>Read More</h1>
+        </div>
+    </div>
+</body>
+
+</html>
