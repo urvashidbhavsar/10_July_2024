@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 20px;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <script>
+        // document.body.style. 
+        let b = document.getElementsByTagName("div")
+        for (let i = 0; i < b.length; i++) {
+            b[i].style.backgroundColor = "magenta";
+            b[i].innerHTML = i + 1
+        }
+    </script>
+</body>
+
+</html>

@@ -10,7 +10,7 @@ myFunc();
 // pass argument
 function message(msg) {
     if (msg) {
-        console.log(msg)
+        console.warn(msg)
     } else {
         console.log("error")
     }

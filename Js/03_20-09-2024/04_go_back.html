@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="gopage()">Go</button>
+    <button onclick="backpage()">Back</button>
+
+    <script>
+        function gopage() {
+            history.go(-4)
+        }
+        function backpage() {
+            window.history.back()
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openlink()">Open link</button>
+    <button onclick="closelink()">Close link</button>
+    <br><br>
+
+    <!-- <iframe src="" name="myframe" frameborder="10" height="400px" width="600px"></iframe> -->
+
+    <script>
+        var link = "https://bootsnipp.com/snippets/Vg6bN", clink;
+        function openlink() {
+            clink = window.open(link, "_blank")
+        }
+        function closelink() {
+            clink.window.close()
+        }
+    </script>
+</body>
+
+</html>
