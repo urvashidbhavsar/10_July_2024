@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* create a class which is not exist in structure.  */
+        .change {
+            font-family: sans-serif;
+            color: maroon;
+            border-bottom: 2px solid black;
+            letter-spacing: 2px;
+            padding: 10px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="changeCss()">Click to change</button>
+
+    <h1 id="h1" class="myclass">Hello world</h1>
+
+    <script>
+        function changeCss() {
+            let head = document.getElementById("h1")
+            // head.className = "change"
+
+            if (head.className == "myclass") {
+                head.className = "change"
+            } else {
+                head.className = "myclass"
+            }
+        }
+    </script>
+</body>
+
+</html>

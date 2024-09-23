@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg {
+            color: blue;
+            font-weight: bold;
+        }
+
+        #err {
+            color: red;
+            font-size: 12px;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="">Enter City : </label>
+            <input type="text" name="cityname" id="city" onchange="return userInput()" onblur="return userInput()">
+            <span id="err"></span>
+        </div>
+        <div>
+            <!-- <button onclick="return userInput()">Submit</button> -->
+        </div>
+    </form>
+
+    <div>
+        <p>You Entered : <span id="msg"></span></p>
+    </div>
+
+    <script>
+        function userInput() {
+            let city = document.getElementById("city");
+            if (city.value == "") {
+                // alert("Enter value")
+                document.getElementById("err").innerHTML = "Enter value"
+                city.classList.add("error");
+                city.focus()
+            } else {
+                document.getElementById("err").innerHTML = null
+                city.classList.remove("error");
+                document.getElementById("msg").innerHTML = city.value;
+                city.value = ""
+            }
+
+            return false
+        }
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .mydiv {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            transition: 2s ease all;
+        }
+
+        /* create a class which is not exist in html structure */
+        .setdiv {
+            background-color: darkblue;
+            color: white;
+            font-family: sans-serif;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addClass()">add</button>
+    <button onclick="removeClass()">remove</button>
+    <button onclick="toggleClass()">toggle</button>
+    <button onclick="checkClass()">contains</button>
+    <hr>
+
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque optio. Voluptates maiores error ad
+        veritatis suscipit est perspiciatis sint quod quidem quis. Accusantium esse, neque delectus debitis veritatis
+        beatae?
+    </div>
+
+    <div class="mydiv" id="div1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, mollitia recusandae, nobis, similique sed
+        repellendus labore quaerat dolor expedita reprehenderit nam. Magnam tenetur, quo totam perferendis quae eligendi
+        autem necessitatibus.
+    </div>
+
+    <script>
+        function addClass() {
+            let div = document.querySelector(".mydiv")
+            div.classList.add("setdiv")
+        }
+        function removeClass() {
+            let div = document.querySelector(".mydiv")
+            div.classList.remove("setdiv")
+        }
+        function toggleClass() {
+            let div = document.getElementById("div1")
+            div.classList.toggle("setdiv")
+        }
+        function checkClass() {
+            let div = document.getElementById("div1")
+            if (div.classList.contains("setdiv")) {
+                alert("class Exist")
+            } else {
+                alert("class not exist")
+            }
+        }
+    </script>
+</body>
+
+</html>
