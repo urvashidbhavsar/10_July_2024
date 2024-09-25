@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #counters {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="counters"></div>
+
+    <script>
+        let c = document.getElementById("counters");
+        let start = 0;
+        let time = setInterval(() => {
+            c.innerHTML = ++start
+            if (start == 100) {
+                clearInterval(time)
+            }
+        }, 50);
+    </script>
+</body>
+
+</html>

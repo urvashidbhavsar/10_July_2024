@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+        let date = new Date();
+        document.getElementById("p1").innerHTML = `${date}`
+        document.getElementById("p2").innerHTML = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`
+
+        document.getElementById("p3").innerHTML = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()} : ${date.getMilliseconds()}`
+
+        var day = date.getDay();
+        switch (day) {
+            case 1:
+                document.getElementById("p4").innerHTML = `Day is : Monday`
+                break;
+            case 2:
+                document.getElementById("p4").innerHTML = `Day is : Tuesday`
+                break;
+            case 3:
+                document.getElementById("p4").innerHTML = `Day is : Wednesday`
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+
+</html>

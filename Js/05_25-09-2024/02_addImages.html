@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 40px;
+            gap: 20px;
+        }
+
+        img {
+            height: 200px;
+            max-width: 100%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        .image {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="addimg" placeholder="Enter Image URL">
+    <button onclick="addImages()">Add</button>
+    <hr>
+
+    <div class="main">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/863963/pexels-photo-863963.jpeg?cs=srgb&dl=pexels-blaque-x-264516-863963.jpg&fm=jpg"
+                alt="">
+        </div>
+    </div>
+
+    <script>
+        function addImages() {
+            let img = document.createElement("img"),
+                adddiv = document.createElement("div"),
+                input = document.getElementById("addimg").value;
+
+            img.setAttribute("src", input);
+            adddiv.setAttribute("class", "image");
+
+            adddiv.append(img);
+            document.querySelector(".main").appendChild(adddiv);
+            input = ""
+        }
+    </script>
+</body>
+
+</html>
