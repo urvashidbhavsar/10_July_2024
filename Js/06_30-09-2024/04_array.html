@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var fruits = ["Apple", "Mango", "Grapes", "Watermalon", "Pineapple", "Bananas"];
+
+        // document.write(fruits);
+        console.log(fruits);
+
+        // to print single array value
+        document.writeln(fruits[0])
+        document.writeln("<br>============<br>")
+
+        // using for of loop 
+        for (const f of fruits) {
+            document.writeln(f)
+        }
+
+        document.writeln("<br>============<br>")
+        // using for loop
+        for (let i = 0; i < fruits.length; i++) {
+            document.write(`<div>${i + 1} => ${fruits[i]}</div>`)
+        }
+
+        document.writeln("<br>============<br>")
+        fruits.forEach(element => {
+            document.writeln(element)
+        });
+    </script>
+</body>
+
+</html>

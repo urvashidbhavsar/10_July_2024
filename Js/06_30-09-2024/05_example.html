@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        img {
+            height: 300px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+
+    <script>
+        var img = ["images/img.jpg", "images/img2.jpg",
+            "images/img3.jpg", "images/img4.jpg",
+            "images/img5.jpg", "images/img6.webp"
+        ]
+
+        let m = document.querySelector(".main");
+        img.forEach(e => {
+            console.log(e);
+            m.innerHTML += `
+            <div class="image">
+                <img src=${e} alt="">
+            </div>`
+        });
+    </script>
+</body>
+
+</html>
