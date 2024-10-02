@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+
+
+    <script>
+        var product =
+            [
+                {
+                    id: 1,
+                    pname: "Chetak 2903",
+                    description: "Bajaj Auto High Speed Electric Scooter Ebony Black",
+                    color: "Ebony Black",
+                    price: "99,998",
+                    image: "https://m.media-amazon.com/images/I/61KNCfHKL0L._SX450_.jpg"
+                },
+                {
+                    id: 2,
+                    pname: "Chetak 2903",
+                    description: "Bajaj Auto High Speed Electric Scooter Ebony Black",
+                    color: "Ebony Black",
+                    price: "99,998",
+                    image: "https://m.media-amazon.com/images/I/61aP4bbCOcL._SX450_.jpg"
+                }
+            ]
+
+        let main = document.querySelector(".main");
+
+        product.forEach(e => {
+            // for (const p in product) {
+            //     if (Object.prototype.hasOwnProperty.call(product, p)) {
+            main.innerHTML += `
+                     <div class="card">
+                        <img src="${e.image}" alt="">
+                        <div class="card-body">
+                            <h2 class="title">${e.pname}</h2>
+                            <p class="des">${e.description}</p>
+                            <p class="clr">${e.color}</p>
+                            <p class="price">&#8377; ${e.price}</p>
+                        </div>
+                    </div>`
+            //     }
+            // }
+        });
+    </script>
+</body>
+
+</html>
