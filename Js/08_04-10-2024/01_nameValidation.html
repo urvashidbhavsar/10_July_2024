@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            height: 25px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid gray
+        }
+
+        .row {
+            padding: 5px 0;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <input type="text" name="fname" id="firstname" placeholder="Enter name" onblur="return checkname()"
+                onkeyup="return checknameptn()" maxlength="30" oninput="nonDigit()">
+            <div id="msg" class="msg"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="" id="">
+        </div>
+        <div class="row">
+            <button onclick="return checkname()">Click Here</button>
+        </div>
+    </form>
+
+    <script>
+        function checkname() {
+            let fname = document.getElementById("firstname")
+            if (fname.value == "") {
+                document.getElementById("msg").innerHTML = "Enter name"
+                fname.classList.add("err")
+            }
+            return false
+        }
+
+
+        function checknameptn() {
+            let fname = document.getElementById("firstname")
+            let ptn = /^[a-zA-Z.\s]*$/
+            if (!ptn.test(fname.value)) {
+                document.getElementById("msg").innerHTML = "Invalid value!!!"
+                fname.classList.add("err")
+            } else if (fname.value.length < 5) {
+                document.getElementById("msg").innerHTML = "Enter atleast 5 character"
+                fname.classList.add("err")
+            } else {
+                document.getElementById("msg").innerHTML = null
+                fname.classList.remove("err")
+            }
+            return false
+        }
+
+        function nonDigit() {
+            let fname = document.getElementById("firstname")
+            fname.value = fname.value.replace(/[\d.\W]/g, '')
+        }
+        // let inp = document.querySelector("input");  
+        // inp.addEventListener("input", () => {
+        //     inp.value = inp.value.toUpperCase()
+        // });
+
+        let inp = document.querySelectorAll("input[type='text']");
+        inp.forEach(element => {
+            element.addEventListener("input", () => {
+                element.value = element.value.toUpperCase()
+            })
+        });
+    </script>
+</body>
+
+</html>
