@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            height: 25px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid gray
+        }
+
+        .row {
+            padding: 5px 0;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <input type="text" name="" id="fname" placeholder="Firstname" onkeyup="return checkNamePtn('fname','msg1')"
+                oninput="notAllowed(this)">
+            <div class="msg" id="msg1"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="" id="mname" placeholder="Middlename"
+                onkeyup="return checkNamePtn('mname','msg2')">
+            <div class="msg" id="msg2"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="" id="lname" placeholder="Lastname" onkeyup="return checkNamePtn('lname','msg3')">
+            <div class="msg" id="msg3"></div>
+        </div>
+    </form>
+
+    <script>
+        function checkNamePtn(input, message) {
+            let inp = document.getElementById(input)
+            let ptn = /^[A-Za-z]*$/
+            if (!ptn.test(inp.value)) {
+                document.getElementById(message).innerHTML = "Invalid name value!!!"
+            } else {
+                document.getElementById(message).innerHTML = null
+            }
+        }
+        function notAllowed(allow) {
+            allow.value = allow.value.replace(/[\d.\W]/g, '')
+        }
+    </script>
+</body>
+
+</html>

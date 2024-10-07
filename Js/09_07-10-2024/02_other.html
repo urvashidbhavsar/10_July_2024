@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            height: 25px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid gray
+        }
+
+        .row {
+            padding: 5px 0;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" name="form1">
+        <div class="row">
+            Gender :
+            <input type="radio" name="gen" id="m"> Male
+            <input type="radio" name="gen" id="f"> Female
+            <div class="msg" id="msg1"></div>
+        </div>
+        <div class="row">
+            City :
+            <input type="checkbox" name="" id="c1"> Surat
+            <input type="checkbox" name="" id="c2"> Bharuch
+            <input type="checkbox" name="" id="c3"> Baroda
+            <div class="msg" id="msg2"></div>
+        </div>
+        <div class="row">
+            <select name="" id="mycity">
+                <option value="-1">--- select city ---</option>
+                <option value="">Surat</option>
+            </select>
+            <div class="msg" id="msg3"></div>
+        </div>
+        <div class="row">
+            <button onclick="return checkValidate()">Validate</button>
+        </div>
+    </form>
+
+    <script>
+        function checkValidate() {
+            // let male = document.form1.gen[0].checked;
+
+            let male = document.getElementById("m"),
+                female = document.getElementById("f"),
+                c1 = document.getElementById("c1"),
+                c2 = document.getElementById("c2"),
+                c3 = document.getElementById("c3"),
+                city = document.getElementById("mycity")
+
+            if (male.checked == false && female.checked == false) {
+                document.getElementById("msg1").innerHTML = "Select value!!!"
+            } else if (c1.checked == false && c2.checked == false && c3.checked == false) {
+                document.getElementById("msg2").innerHTML = "Select value!!!"
+            } else if (city.value == "-1") {
+                document.getElementById("msg3").innerHTML = "Select Value!!!"
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
