@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            height: 25px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid gray;
+            border-right: none;
+        }
+
+        .row {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .row .icon {
+            height: 25px;
+            width: 25px;
+            padding: 5px;
+            border: 1px solid gray;
+            border-left: none;
+            display: grid;
+            place-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <div>
+                <input type="password" name="" id="pwd">
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-lock" id="i1" onclick="ShowPassword('pwd',this)"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <input type="password" name="" id="cpwd">
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-lock" id="i2" onclick="ShowPassword('cpwd',this)"></i>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function ShowPassword(password, icon) {
+            let inp = document.getElementById(password);
+            if (inp.type == "password" && icon.classList.contains("fa-lock")) {
+                inp.type = "text"
+                icon.classList.remove("fa-lock")
+                icon.classList.add("fa-lock-open")
+            } else {
+                inp.type = "password"
+                icon.classList.remove("fa-lock-open")
+                icon.classList.add("fa-lock")
+            }
+        }
+    </script>
+</body>
+
+</html>

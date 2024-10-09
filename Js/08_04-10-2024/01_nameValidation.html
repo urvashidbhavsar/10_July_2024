@@ -44,11 +44,11 @@
     <form action="#">
         <div class="row">
             <input type="text" name="fname" id="firstname" placeholder="Enter name" onblur="return checkname()"
-                onkeyup="return checknameptn()" maxlength="30" oninput="nonDigit()">
+                onkeyup="return checknameptn()" maxlength="30" oninput="nonDigit()" class="namefield">
             <div id="msg" class="msg"></div>
         </div>
         <div class="row">
-            <input type="text" name="" id="">
+            <input type="text" name="" id="" class="namefield">
         </div>
         <div class="row">
             <button onclick="return checkname()">Click Here</button>
@@ -86,16 +86,16 @@
             let fname = document.getElementById("firstname")
             fname.value = fname.value.replace(/[\d.\W]/g, '')
         }
-        // let inp = document.querySelector("input");  
+        // let inp = document.querySelector("input");
         // inp.addEventListener("input", () => {
         //     inp.value = inp.value.toUpperCase()
         // });
 
-        let inp = document.querySelectorAll("input[type='text']");
-        inp.forEach(element => {
-            element.addEventListener("input", () => {
-                element.value = element.value.toUpperCase()
-            })
+        let inp = document.querySelectorAll(".namefield")
+        inp.forEach(e => {
+            e.addEventListener("input", () => {
+                e.value = e.value.toUpperCase()
+            });
         });
     </script>
 </body>
