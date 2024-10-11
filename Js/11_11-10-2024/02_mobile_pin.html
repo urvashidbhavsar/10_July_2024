@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="mno" placeholder="Mobile No" onkeyup="return checkDigit(this, 'p1',10)">
+    <p id="p1"></p>
+
+    <input type="text" name="" id="pin" placeholder="Pincode" onkeyup="return checkDigit(this, 'p2',6)">
+    <p id="p2"></p>
+
+    <script>
+        function checkDigit(input, msg, len) {
+            let ptn = /^[0-9]*$/
+            if (!ptn.test(input.value)) {
+                document.getElementById(msg).innerHTML = "Invalid value"
+            } else if (input.value.length > len) {
+                document.getElementById(msg).innerHTML = "Enter Proper Value"
+            } else {
+                document.getElementById(msg).innerHTML = null
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>

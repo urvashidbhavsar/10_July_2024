@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css" />
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myslider">
+        <div>
+            <img src="https://marketplace.canva.com/EAGDYZWPJyc/1/0/1600w/canva-green-and-yellow-simple-nature-lake-desktop-wallpaper-oO_xIwyw0KM.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://i.redd.it/d2hd73xxwvaa1.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://wallpapers-clan.com/wp-content/uploads/2024/03/fairycore-magic-sunset-desktop-wallpaper-preview.jpg"
+                alt="">
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.myslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
