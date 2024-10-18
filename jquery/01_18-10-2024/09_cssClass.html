@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+        }
+
+        .mydiv1 {
+            background-color: teal;
+            color: white;
+            padding: 20px;
+        }
+
+        .mydiv2 {
+            background-color: crimson;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <button id="btn1">add class</button>
+    <button id="btn2">remove class</button>
+    <button id="btn3">toggle class</button>
+    <button id="btn4">has class</button>
+
+    <hr>
+    <div class="div1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam autem enim accusamus adipisci saepe. Autem,
+        totam atque magni nisi neque laborum, nesciunt beatae nam minus iste tempore, recusandae voluptatem
+        reprehenderit.
+    </div>
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corrupti! Quod quas, beatae ullam optio magnam
+        consectetur assumenda nam maiores omnis, fugit nostrum quaerat inventore totam placeat sit? Quo, aspernatur.
+    </div>
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".div1").addClass("mydiv1")
+            })
+            $("#btn2").click(function () {
+                $(".div1").removeClass("mydiv1")
+            })
+            $("#btn3").click(function () {
+                $(".div2").toggleClass("mydiv2")
+            })
+            $("#btn4").click(function () {
+                if ($(".div2").hasClass("mydiv2")) {
+                    alert("true")
+                } else {
+                    alert("false")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

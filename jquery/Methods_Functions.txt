@@ -1,0 +1,65 @@
+there is many functions are provided by jquery. 
+
+1. display functions 
+    hide(), show(), toggle() 
+
+2. fade functions 
+    fadeIn(), fadeOut(), fadeToggle(), fadeTo()
+
+3. slide functions 
+    slideUp(), slideDown(), slideToggle()
+
+4. animation function = animate() 
+
+5. stop function = stop() 
+
+6. css function = css() 
+
+7. css class function 
+    addClass(), removeClass(), toggleClass(), hasClass()
+
+8. add functions 
+    append(), prepend(), before(), after()
+
+9. remove function 
+    remove(), empty() 
+
+10. copy function = clone() 
+
+11. for shift values / copy and move any place 
+    appendTo(), prependTo(), insertBefore(), insertAfter() 
+
+12. attribute function 
+    attr(), removeAttr()
+
+13. set and get attribute function 
+    text(), html(), val() 
+
+14. wrap functions 
+    wrap(), wrapAll(), wrapInner(), unwrap() 
+
+15. dimensions 
+    height(), width(), innerHeight(), innerWidth(), outerHeight(), outerWidth().
+
+16. traversing = move through..
+
+17. anscestor (parent)
+	parent(), parents(), parentsUntil()
+
+18. descendent (child) 
+	children(), find() 
+
+19. siblings (similler) 
+   siblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil()
+
+20. filter (searching) 
+	filter(), first(), last(), not(), eq() 
+
+21. ajax 
+	load, ajax
+
+
+
+
+
+

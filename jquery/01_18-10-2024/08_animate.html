@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <div></div>
+
+    <script>
+        $(document).ready(function () {
+            $("div").animate({
+                marginLeft: "1200px",
+            }, 5000, function () {
+                $("div").animate({
+                    marginLeft: "0"
+                }, 1000).css("backgroundColor", "#abc123")
+            })
+        })
+    </script>
+</body>
+
+</html>
