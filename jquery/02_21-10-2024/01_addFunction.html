@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">append</button>
+    <button id="btn2">prepend</button>
+    <button id="btn3">before</button>
+    <button id="btn4">after</button>
+
+    <ul>
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        $(function () {
+            $list = "New List"
+            $("#btn1").click(function () {
+                $("ul").append(`<li>${$list}</li>`)
+            })
+            $("#btn2").click(function () {
+                $("ul").prepend("<li>New List</li>")
+            })
+            $("#btn3").click(function () {
+                $("ul").before("<li>New List</li>")
+            })
+            $("#btn4").click(function () {
+                $("ul").after("<li>New List</li>")
+            })
+        })
+    </script>
+</body>
+
+</html>

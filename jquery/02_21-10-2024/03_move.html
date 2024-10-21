@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">append to</button>
+    <button id="btn2">prepend to</button>
+    <button id="btn3">insert before</button>
+    <button id="btn4">insert after</button>
+
+    <ul>
+        <li class="li-1">List 1</li>
+        <li class="li-2">Shifting</li>
+    </ul>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".li-2").appendTo("ul")
+            })
+            $("#btn2").click(function () {
+                $(".li-2").prependTo("ul")
+            })
+            $("#btn3").click(function () {
+                $(".li-2").insertBefore("ul")
+            })
+            $("#btn4").click(function () {
+                $(".li-2").clone().insertAfter("ul")
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sub {
+            padding: 5px;
+            background-color: teal;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">add attr</button>
+    <button id="btn2">remove attr</button>
+    <button id="btn3">get attr</button>
+
+    <hr>
+    <button id="btn">Set Button</button>
+
+    <script>
+        $(function () {
+            $("#btn1").on("click", function () {
+                $("#btn").attr("class", "sub")
+            })
+            $("#btn2").on("click", function () {
+                $("#btn").removeAttr("class")
+            })
+            $("#btn3").on("click", function () {
+                alert($("#btn").attr("class"))
+            })
+        })
+    </script>
+</body>
+
+</html>
