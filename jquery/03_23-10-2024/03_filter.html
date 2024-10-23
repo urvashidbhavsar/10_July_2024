@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        .main {
+            display: flex;
+            gap: 30px;
+        }
+
+        .fill {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div class="main">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>
+    </div>
+
+    <script>
+        $(function () {
+            // $(".box").filter(".box4").addClass("fill")
+            // $(".box").first().addClass("fill")
+            // $(".box").last().addClass("fill")
+            // $(".box").not(".box2").addClass("fill")
+            $(".box").eq(2).addClass("fill")
+        })
+    </script>
+</body>
+
+</html>

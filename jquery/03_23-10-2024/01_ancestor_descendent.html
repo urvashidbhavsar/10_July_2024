@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul,
+        li {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .light {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn">click</button>
+
+    <hr>
+    <div class="main">Main
+        <div class="sub"> sub
+            <ul> ul
+                <li>List 1</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                // ancestor
+                // $("li").parent().addClass("light")
+                // $("li").parents(".main").addClass("light")
+                // $("li").parentsUntil(".main").addClass("light")
+
+                // descendent
+                // $(".main").children().addClass("light")
+                $(".main").find("ul").addClass("light")
+            })
+        })
+    </script>
+</body>
+
+</html>
