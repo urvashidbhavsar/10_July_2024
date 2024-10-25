@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- ajax => asynchronised js and xml -->
+    <!-- use to load an external data without reloading file-->
+
+    <button id="btn1">click</button>
+
+    <h1></h1>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("h1").load("data.txt")
+            })
+        })
+    </script>
+</body>
+
+</html>
