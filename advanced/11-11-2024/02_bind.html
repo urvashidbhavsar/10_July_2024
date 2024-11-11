@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var fur = {
+            brand: "Cello",
+            setbrand: function () {
+                return this.brand;
+            }
+        }
+        var f1 = fur.setbrand
+        var f2 = f1.bind(fur)
+        // console.log(f1);
+        console.log(f2());
+
+    </script>
+</body>
+
+</html>

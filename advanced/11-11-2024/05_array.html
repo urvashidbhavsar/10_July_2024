@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var fruits = ["apple", "grapes", "cherry"]
+        fruits.forEach(f => {
+            console.log(f);
+        });
+        console.log("=======");
+        fruits.push("Banana", "watermalon")
+        fruits.forEach(f => {
+            console.log(f);
+        });
+        console.log("=======");
+        fruits.pop()
+        fruits.pop()
+        fruits.forEach(f => {
+            console.log(f);
+        });
+
+        // ==================================================
+        var str = Array.from("Hello world")
+        console.log(str);
+
+        var newstr = Array.from(["Hello", "world"])
+        console.log(newstr);
+
+        // =============================================
+        var fruits = ["apple", "grapes", "cherry"]
+        var frt = fruits.keys()
+        for (const f of frt) {
+            console.log(f + "=>" + fruits[frt]);
+        }
+
+        // ==========================================
+        function isPrime(val) {
+            var start = 2;
+            while (start <= Math.sqrt(val)) {
+                if (val % start++ < 1) {
+                    return false;
+                }
+            }
+            return val > 1;
+        }
+        console.log([3, 4, 2, 12].find(isPrime));
+        console.log([1, 21, 3, 4].findIndex(isPrime));
+
+    </script>
+</body>
+
+</html>
