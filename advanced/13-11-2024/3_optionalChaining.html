@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            first: "Abc",
+            last: "last",
+            mobileno: 9866556655,
+        }
+        let p = person?.first;
+        let p1 = person?.firstname;
+        console.log(p);
+        console.log(p1);
+
+        let p2 = person.first;
+        let p3 = person.firstname;
+        console.log(p2);
+        console.log(p3);
+
+        // ============================================= 
+        let emp = {
+            first: "Abc",
+            sal: 65332,
+            address: {
+                line1: "Bhatar",
+                city: "Surat"
+            }
+        }
+
+        // emp.address && emp.address.city 
+        let e1 = emp.address?.city
+        let e2 = emp.address?.line2
+        document.writeln(e1);
+        document.writeln(e2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const decrement = (num) => {
+            if (num == 0) return;
+            document.writeln(num);
+            decrement(num - 1)
+        }
+        decrement(10)
+        document.write("<br>")
+
+        const increment = (num) => {
+            if (num == 11) return;
+            document.writeln(num);
+            // increment(num + 1)
+            increment(++num)
+        }
+        increment(1)
+        document.write("<br>")
+        // ============================================ 
+        const oddNum = (num) => {
+            debugger
+            if (num >= 50) return;
+            if (num % 2 != 0) {
+                document.writeln(num)
+                oddNum(num + 2)
+                // if (num == 100) return
+            }
+        }
+        oddNum(5)
+    </script>
+</body>
+
+</html>

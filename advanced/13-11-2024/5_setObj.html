@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let newset = new Set();
+        newset.add("abc")
+        newset.add("xyz")
+        newset.add("mno")
+
+        for (const e of newset) {
+            document.writeln(e)
+        }
+        document.write("<br>")
+
+        newset.delete("xyz")
+        for (const e of newset) {
+            document.writeln(e)
+        }
+        document.write("<br>")
+
+        let i = newset.entries();
+        for (const e of i) {
+            document.writeln(e)
+        }
+        document.write("<br>")
+    </script>
+</body>
+
+</html>
