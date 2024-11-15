@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // person, may b student or employee or family member
+        function person(fname, lname) {
+            this.fname = fname;
+            this.lname = lname;
+        }
+        person.prototype.getFullname = function () {
+            return this.fname + " " + this.lname
+        }
+        // create object for calling class / function
+        var p1 = new person("Sujal", "Jethava")
+        console.log(p1.getFullname());
+
+    </script>
+</body>
+
+</html>

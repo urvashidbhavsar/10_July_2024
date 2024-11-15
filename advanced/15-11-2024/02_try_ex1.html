@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // variable undeclaration 
+
+        var a = 10;
+        try {
+            console.log(a);
+            console.log(b);
+        } catch (e) {
+            // throw Error(e);
+            console.log(e);
+        }
+
+        // ================================= 
+        var x = 10;
+        try {
+            let res = x / 0
+            console.log(res);
+        } catch (e) {
+            console.log(e);
+        } finally {
+            console.log("finally block invoke");
+        }
+
+        //================================
+        var x = "Hello";
+        try {
+            console.log(x)
+        } catch (e) {
+            console.log(e);
+        } finally {
+            console.log("finally execute");
+        }
+    </script>
+</body>
+
+</html>

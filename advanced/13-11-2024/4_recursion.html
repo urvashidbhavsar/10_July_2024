@@ -26,16 +26,17 @@
         increment(1)
         document.write("<br>")
         // ============================================ 
-        const oddNum = (num) => {
+        const oddNum = (num, stop) => {
             debugger
-            if (num >= 50) return;
+            if (num >= stop) return;
             if (num % 2 != 0) {
                 document.writeln(num)
-                oddNum(num + 2)
+                oddNum(num + 2, stop)
                 // if (num == 100) return
             }
         }
-        oddNum(5)
+        oddNum(5, 50)
+        oddNum(51, 100)
     </script>
 </body>
 
