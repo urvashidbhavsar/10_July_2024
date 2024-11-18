@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const array = [15, 16, 17, 18, 19];
+
+        function reducer(accumulator, currentValue, index) {
+            debugger
+            const returns = accumulator + currentValue;
+            console.log(
+                `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+            );
+            return returns;
+        }
+
+        array.reduce(reducer);
+    </script>
+</body>
+
+</html>

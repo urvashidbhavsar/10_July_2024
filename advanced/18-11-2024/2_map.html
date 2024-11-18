@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list"></ul>
+    <script>
+        var num = [1, 2, 3, 4, 5]
+        var newvalue = num.map((n) => n += 10)
+        // console.log(n);
+        console.log(newvalue);
+
+
+        var menu = ["Home", "About", "Contact"]
+        var setmenu = menu.map((m) =>
+            document.getElementById("list").innerHTML +=
+            `<li>${m}</li>`
+        )
+    </script>
+</body>
+
+</html>
