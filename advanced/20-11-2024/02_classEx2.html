@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Emp Id</td>
+                <td>Emp Name</td>
+                <td>Emp sal</td>
+                <td>Date of Join</td>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        let empdata = document.getElementById("data");
+        class employee {
+            constructor(id, name, sal, doj) {
+                this.id = id;
+                this.name = name;
+                this.sal = sal;
+                this.doj = doj;
+            }
+
+            // create method 
+            printData() {
+                empdata.innerHTML += `
+                <tr>
+                    <td>${this.id}</td>
+                    <td>${this.name}</td>
+                    <td>${this.sal}</td>
+                    <td>${this.doj}</td>
+                </tr>`
+            }
+        }
+        var e1 = new employee(1, "Sujal", 25000, "20-10-2024")
+        var e2 = new employee(2, "Riya", 20000, "06-05-2024")
+        e1.printData()
+        e2.printData()
+    </script>
+</body>
+
+</html>
