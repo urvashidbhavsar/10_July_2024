@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="number" placeholder="Number">
+    <button id="btn" onclick="oddeven()">check</button>
+
+    <p id="res"></p>
+
+    <script>
+        var oddeven = () => new Promise((resolve, reject) => {
+            let num = document.getElementById("number").value;
+            if (num % 2 == 0) {
+                resolve(document.getElementById("res").innerHTML = `${num} is even`)
+            } else {
+                reject(document.getElementById("res").innerHTML = `${num} is odd`)
+            }
+        })
+            .then(resolve => console.log(resolve))
+            .catch(reject => console.log(reject))
+    </script>
+</body>
+
+</html>
