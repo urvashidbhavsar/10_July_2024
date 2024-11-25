@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="setvalue()">set item</button>
+    <button onclick="getvalue()">get item</button>
+    <button onclick="removevalue()">remove item</button>
+    <button onclick="clearvalue()">clear item</button>
+
+    <script>
+        function setvalue() {
+            localStorage.setItem("2", "xyz")
+        }
+        function getvalue() {
+            alert(localStorage.getItem("1"))
+        }
+        function removevalue() {
+            localStorage.removeItem("0")
+        }
+        function clearvalue() {
+            localStorage.clear()
+        }
+    </script>
+</body>
+
+</html>
