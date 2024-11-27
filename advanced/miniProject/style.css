@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .logo img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+header .navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar ul li {
+    padding: 20px;
+}
+
+header .navbar ul li a {
+    color: black;
+    font-size: 20px;
+}
+
+.productsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.productcard {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.productcard img {
+    max-width: 100%;
+}
+
+.productcard .prodetails {
+    padding: 10px;
+}
+
+.productcard .title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.productcard .price {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.productcard .add {
+    padding: 10px 0;
+}
+
+.productcard .brand {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.productcard .add button {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 22px;
+    background-color: midnightblue;
+    color: white;
+    border: none;
+}

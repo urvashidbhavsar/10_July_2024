@@ -27,7 +27,6 @@ var newfunc = async () => {
 }
 newfunc();
 
-
 var func = async () => {
     console.log("Last function executed");
     let f = await myfunc();

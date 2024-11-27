@@ -17,13 +17,13 @@
         var oddeven = () => new Promise((resolve, reject) => {
             let num = document.getElementById("number").value;
             if (num % 2 == 0) {
-                resolve(document.getElementById("res").innerHTML = `${num} is even`)
+                resolve(`${num} is even`)
             } else {
-                reject(document.getElementById("res").innerHTML = `${num} is odd`)
+                reject(`${num} is odd`)
             }
         })
-            .then(resolve => console.log(resolve))
-            .catch(reject => console.log(reject))
+            .then(resolve => document.getElementById("res").innerHTML = resolve)
+            .catch(reject => document.getElementById("res").innerHTML = reject)
     </script>
 </body>
 

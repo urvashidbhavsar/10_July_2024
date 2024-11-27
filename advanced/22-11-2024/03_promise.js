@@ -1,5 +1,5 @@
 var mypromise = new Promise((resolve, reject) => {
-    var sum = 5 + 6;
+    var sum = 5 + 5;
     if (sum == 10) {
         resolve("addition task completed")
     } else {
