@@ -5,6 +5,7 @@ import App from './App';
 import Msg1 from './Msg';
 // import 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
