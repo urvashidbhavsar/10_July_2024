@@ -1,12 +1,12 @@
 import React from 'react'
 
 const expression = () => {
-    let username = "Priyank Mali"
+    // let username = "Priyank Mali"
     return (
         <div>
             {/* {} is used to execute js code */}
             <div>
-                {username} is a student
+                {/* {username} is a student */}
             </div>
         </div>
     )

@@ -1,0 +1,12 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: auto;
+    width: 80%;
+}
+
+.grid img{
+    max-width: 100%;
+    border-radius: 20px;
+}
