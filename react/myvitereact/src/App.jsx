@@ -5,17 +5,27 @@ import Expression from './expression'
 import RanderingList from './RanderingList'
 import Eventex from './eventex'
 // import PassingProps from './passingProps'
-// import Conditionex1 from './conditionex1'
+// import Conditionex1 from './conditionex1';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenNib } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Stateex from './stateEx/stateex'
+import SetStateex from './stateEx/setStateex'
+
 
 function App() {
 
   return (
     <>
       <Eventex />
-      <h1 className='text-3xl text-rose-600 '>
+      <FontAwesomeIcon icon={faPenNib} />
+      <FontAwesomeIcon icon={faEnvelope} />
+      <Stateex />
+      <SetStateex />
+      {/* <h1 className='text-3xl text-rose-600 '>
         Hello
-      </h1>
-      <div className='h-auto w-2/3 border-2 border-solid border-orange-500 p-4 m-4 bg-blue-400 text-white'>
+      </h1> */}
+      {/* <div className='h-auto w-2/3 border-2 border-solid border-orange-500 p-4 m-4 bg-blue-400 text-white'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore voluptates dolorem reprehenderit. Sapiente aliquid necessitatibus laboriosam ea quis deleniti laudantium odit enim consequuntur quasi ipsum, autem at ex dolorum?
       </div>
 
@@ -37,7 +47,7 @@ function App() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate adipisci quidem sit consequuntur culpa! Ducimus cum aspernatur soluta, voluptatum sint eveniet sit quisquam ipsam odit iste, illo officiis modi impedit.
           </p>
         </div>
-      </div>
+      </div> */}
       {/* <Navbar />
       <Expression />
       <Callimage />

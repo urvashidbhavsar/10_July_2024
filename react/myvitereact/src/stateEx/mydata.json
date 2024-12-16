@@ -1,0 +1,14 @@
+{
+    "personalities": [
+        {
+            "Name": "Akshay kumar",
+            "Expertise": "Acting",
+            "Country_of_birth": "India"
+        },
+        {
+            "Name": "Abx",
+            "Expertise": "Reading",
+            "Country_of_birth": "India"
+        }
+    ]
+}
