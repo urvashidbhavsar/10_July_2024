@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+  width: 50%;
+}
+.images{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
