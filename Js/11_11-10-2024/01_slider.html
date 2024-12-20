@@ -79,6 +79,10 @@
         }
         slider(index)
 
+        setInterval(() => {
+            change(1)
+        }, 2000);
+
         function slider(num_slide) {
             let slide = document.getElementsByClassName("slider");
 
@@ -89,7 +93,7 @@
 
             if (num_slide < 0) {
                 index = slid
-                
+
                 e.length - 1;
                 num_slide = slide.length - 1;
             }
