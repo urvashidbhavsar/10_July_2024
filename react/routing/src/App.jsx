@@ -1,8 +1,11 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './navbar/navbar'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Ifstatement from './conditioanlRender/Ifstatement'
+import Person from './search/Person'
 
 function App() {
 
@@ -19,6 +22,9 @@ function App() {
         {/* <About /> */}
         {/* <Contact /> */}
       </Router>
+      <Person />
+
+      {/* <Ifstatement /> */}
     </>
   )
 }

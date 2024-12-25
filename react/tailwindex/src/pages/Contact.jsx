@@ -4,9 +4,6 @@ const Contact = () => {
     return (
         <>
             <h1>Contact Page</h1>
-            {/* {
-                console.log("Contact")
-            } */}
         </>
     )
 }
