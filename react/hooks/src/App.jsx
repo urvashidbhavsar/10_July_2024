@@ -1,8 +1,12 @@
 import './App.css'
+import Arithmetic from './Arithmetic'
 import SetstateEx from './setstate/SetstateEx'
+import Mathex from './use_reducer/Mathex'
 import Calculate from './useeffect/Calculate'
 import Fetchdata from './useeffect/Fetchdata'
 import Timer from './useeffect/Timer'
+import UseRefex from './useref/UseRefex'
+import VideoPlay from './useref/VideoPlay'
 import Userdata from './usestate/Userdata'
 import UseStateEx from './usestate/UseStateEx'
 
@@ -15,7 +19,11 @@ function App() {
       {/* <Userdata /> */}
       {/* <Timer/> */}
       {/* <Calculate/> */}
-      <Fetchdata/>
+      {/* <Fetchdata/> */}
+      {/* <UseRefex /> */}
+      {/* <VideoPlay /> */}
+      {/* <Mathex /> */}
+      <Arithmetic />
     </>
   )
 }
