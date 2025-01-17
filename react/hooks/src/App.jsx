@@ -2,6 +2,7 @@ import './App.css'
 import Arithmetic from './Arithmetic'
 import SetstateEx from './setstate/SetstateEx'
 import Mathex from './use_reducer/Mathex'
+import Usecontextexample from './usecontext/Usecontextexample'
 import Calculate from './useeffect/Calculate'
 import Fetchdata from './useeffect/Fetchdata'
 import Timer from './useeffect/Timer'
@@ -23,7 +24,8 @@ function App() {
       {/* <UseRefex /> */}
       {/* <VideoPlay /> */}
       {/* <Mathex /> */}
-      <Arithmetic />
+      {/* <Arithmetic /> */}
+      <Usecontextexample />
     </>
   )
 }
