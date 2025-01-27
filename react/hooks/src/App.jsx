@@ -1,5 +1,6 @@
 import './App.css'
 import Arithmetic from './Arithmetic'
+import Fetchapi from './custom_hooks/Fetchapi'
 import SetstateEx from './setstate/SetstateEx'
 import Mathex from './use_reducer/Mathex'
 import Calculation from './usecallback/Calculation'
@@ -31,7 +32,8 @@ function App() {
       {/* <Usecontextexample /> */}
       {/* <Settheme /> */}
       {/* <Calculation /> */}
-      <ExpensiveCalc />
+      {/* <ExpensiveCalc /> */}
+      <Fetchapi />
     </>
   )
 }
