@@ -2,24 +2,32 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
-    const [input, setInput] = useState({
-        email: "",
-        password: ""
-    })
-    const changeText = (e) => {
-        setInput({ ...input, [e.target.name]: e.target.value })
-    }
+    const navigate = useNavigate()
+    const [email, setEmail] = useState("")
+    const [pass, setPass] = useState("")
+    const [username, setUsername] = useState("")
+    // const [input, setInput] = useState({
+    //     email: "",
+    //     password: ""
+    // })
+
+    // const changeText = (e) => {
+    //     setInput({ ...input, [e.target.name]: e.target.value })
+    // }
+
     const handleLogin = (e) => {
         e.preventDefault()
         const getdata = JSON.parse(localStorage.getItem("uservalue")) || []
+        const user = getdata.find(user => user.email === email && user.password === pass);
 
-        if (input.email.toLowerCase() == getdata.email && input.password.toLowerCase() === getdata.pass) {
-            alert("login")
+        if (user) {
+            localStorage.setItem("loginuser", true)
+            setUsername(user.username)
+            navigate("/Home")
         } else {
             alert("invalid")
         }
     }
-
 
     return (
         <>
@@ -28,10 +36,10 @@ const Login = () => {
                     <h2>Login</h2>
                     <div className="row g-3">
                         <div className="col-12">
-                            <input type="text" placeholder='Email' className='form-control' required onChange={changeText} name="email" id="email" value={input.email} />
+                            <input type="text" placeholder='Email' className='form-control' required onChange={(e) => setEmail(e.target.value)} name="email" id="email" value={email} />
                         </div>
                         <div className="col-12">
-                            <input type="text" placeholder='Password' className='form-control' required onChange={changeText} name="password" value={input.password} id="password" />
+                            <input type="text" placeholder='Password' className='form-control' required onChange={(e) => setPass(e.target.value)} name="password" value={pass} id="password" />
                         </div>
                         <div className='col-12'>
                             <button className='btn btn-primary'>Login</button>

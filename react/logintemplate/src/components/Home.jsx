@@ -1,6 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+    const navigate = useNavigate()
+    let user = JSON.stringify(localStorage.getItem("uservalue")) || {}
+
+    const logout = () => {
+        localStorage.removeItem("loginuser")
+        navigate("/")
+    }
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -11,9 +20,9 @@ const Home = () => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0 gap-2 ">
-                            <h4 className='m-0 lh-base'>Hello, User</h4>
+                            <h4 className='m-0 lh-base'>Hello, {user.username || "Guest"}</h4>
 
-                            <button className='btn btn-danger'>Logout</button>
+                            <button className='btn btn-danger' onClick={logout}>Logout</button>
                         </ul>
                     </div>
                 </div>
