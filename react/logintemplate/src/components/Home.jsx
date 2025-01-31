@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
     const navigate = useNavigate()
-    let user = JSON.stringify(localStorage.getItem("uservalue")) || {}
+    let user = localStorage.getItem("loginuser")
+    console.log(user);
 
     const logout = () => {
         localStorage.removeItem("loginuser")
@@ -20,7 +21,7 @@ const Home = () => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0 gap-2 ">
-                            <h4 className='m-0 lh-base'>Hello, {user.username || "Guest"}</h4>
+                            <h4 className='m-0 lh-base'>Hello, {user}</h4>
 
                             <button className='btn btn-danger' onClick={logout}>Logout</button>
                         </ul>

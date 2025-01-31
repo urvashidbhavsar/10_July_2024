@@ -5,7 +5,7 @@ const Login = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [pass, setPass] = useState("")
-    const [username, setUsername] = useState("")
+    const [usernamee, setUsername] = useState("")
     // const [input, setInput] = useState({
     //     email: "",
     //     password: ""
@@ -18,11 +18,10 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault()
         const getdata = JSON.parse(localStorage.getItem("uservalue")) || []
-        const user = getdata.find(user => user.email === email && user.password === pass);
+        const user = getdata.find(user => user.username === usernamee && user.password === pass);
 
         if (user) {
-            localStorage.setItem("loginuser", true)
-            setUsername(user.username)
+            localStorage.setItem("loginuser", usernamee)
             navigate("/Home")
         } else {
             alert("invalid")
@@ -36,7 +35,7 @@ const Login = () => {
                     <h2>Login</h2>
                     <div className="row g-3">
                         <div className="col-12">
-                            <input type="text" placeholder='Email' className='form-control' required onChange={(e) => setEmail(e.target.value)} name="email" id="email" value={email} />
+                            <input type="text" placeholder='Username' className='form-control' required onChange={(e) => setUsername(e.target.value)} name="text" id="email" value={usernamee} />
                         </div>
                         <div className="col-12">
                             <input type="text" placeholder='Password' className='form-control' required onChange={(e) => setPass(e.target.value)} name="password" value={pass} id="password" />
