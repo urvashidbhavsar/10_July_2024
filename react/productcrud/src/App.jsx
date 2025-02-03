@@ -5,6 +5,7 @@ import Loginpage from './Component/Loginpage'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Dashboard from './Component/Dashboard'
 import Loginservice from './Service/Loginservice'
+import Product from './Component/Product/Product'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/Dashboard' element={<Loginservice />}>
             <Route path='/Dashboard' element={<Dashboard />}></Route>
           </Route>
+          <Route path='/Product' element={<Product />}></Route>
         </Routes>
       </Router>
     </>
