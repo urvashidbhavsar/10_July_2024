@@ -23,7 +23,7 @@ const Loginpage = () => {
     return (
         <>
             <div className='container mt-5 py-5'>
-                <form onSubmit={handleLogin} className='w-50 shadow p-3 m-auto mt-5' method='post'>
+                <form onSubmit={handleLogin} className='w-50 shadow p-3 m-auto mt-5'>
                     <h2>Login</h2>
                     <div className="row g-3">
                         <div className="col-12">

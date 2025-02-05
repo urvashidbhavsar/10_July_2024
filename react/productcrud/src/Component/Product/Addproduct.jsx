@@ -32,9 +32,7 @@ const Addproduct = () => {
                 updateData.newprice = ""
             }
         }
-
         setInput(updateData)
-
     }
 
     // console.log(input.id);
@@ -42,9 +40,9 @@ const Addproduct = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let getdata = JSON.parse(localStorage.getItem("products")) || []
+        let getdata = JSON.parse(localStorage.getItem("productsdata")) || []
         getdata.push(input);
-        localStorage.setItem("products", JSON.stringify(getdata))
+        localStorage.setItem("productsdata", JSON.stringify(getdata))
         alert("data store successfully");
 
         setInput({
