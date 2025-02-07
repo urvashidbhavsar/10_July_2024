@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "brand": "boat",
+      "category": "Earbirds",
+      "title": "boAt Bassheads 242",
+      "description": "boAt Bassheads 242 in Ear Wired Earphones with Mic(Active Black)",
+      "oldprice": 1490,
+      "newprice": 549,
+      "image": "https://m.media-amazon.com/images/I/61+tzvHZi+L._AC_UL320_.jpg"
+    },
+    {
+      "id": "2",
+      "brand": "PTron",
+      "category": "Earbirds",
+      "title": "PTron Boom Ultima 4D Dual Driver",
+      "description": "PTron Boom Ultima 4D Dual Driver, in-Ear Gaming Wired Headphones with in-line Mic, Volume Control & Passive Noise Cancelling Boom 3 Earphones -",
+      "oldprice": 1990,
+      "newprice": 299,
+      "image": "https://m.media-amazon.com/images/I/61PlUpGmAYL._AC_UL320_.jpg"
+    },
+    {
+      "id": "3",
+      "brand": "Wecool",
+      "category": "Earbirds",
+      "title": "Wecool Nylon ",
+      "des": "Wecool Nylon Braided 3 in 1 charging cable | Fast charging cable with 3 Ports | Multi pin charging cable | Charging cable to charge Device with",
+      "oldprice": "999",
+      "newprice": "399",
+      "image": "https://m.media-amazon.com/images/I/61FUzup4yAL._AC_UL320_.jpg"
+    },
+    {
+      "id": "4",
+      "brand": "Wings",
+      "category": "Earbirds",
+      "title": "Wings Phantom Truly Wireless in Ear Earbuds ",
+      "description": "Wings Phantom Truly Wireless in Ear Earbuds with LED Battery Indiacator 50ms Low Latency 40Hrs Playtime, MEMS with Mic, Bluetooth 5.3, IPX5",
+      "oldprice": "0",
+      "newprice": "999",
+      "image": "https://m.media-amazon.com/images/I/51y350s61ZL._AC_UL320_.jpg"
+    }
+  ]
+}
