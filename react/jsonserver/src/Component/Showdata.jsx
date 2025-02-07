@@ -36,6 +36,7 @@ const Showdata = () => {
                                 <th>Description</th>
                                 <th>Price</th>
                                 <th>Image</th>
+                                <th colSpan={2}>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -53,6 +54,12 @@ const Showdata = () => {
                                         </td>
                                         <td>
                                             <img src={items.image} alt="" style={imgset} />
+                                        </td>
+                                        <td>
+                                            <button className='btn btn-success'>Edit</button>
+                                        </td>
+                                        <td>
+                                            <button className='btn btn-danger'>Delete</button>
                                         </td>
                                     </tr>
                                 )
