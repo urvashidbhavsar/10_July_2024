@@ -2,9 +2,11 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Addproduct from './Addproduct'
+import Updatedata from './Updatedata'
 
 const Showdata = () => {
     const [data, setData] = useState([])
+    const [editdata, setEditdata] = useState({})
 
     const fetchdata = () => {
         fetch("http://localhost:3000/products")
@@ -21,6 +23,23 @@ const Showdata = () => {
         width: "100px",
         objectFit: "contain"
     }
+
+    const deletedata = (id) => {
+        if (confirm("Are you sure to want to delete this data?")) {
+            const res = fetch(`http://localhost:3000/products/${id}`, {
+                method: "DELETE",
+            })
+                .then(res => res.json())
+                .then(() => {
+                    fetchdata()
+                })
+        }
+    }
+
+    const handleEdit = (items) => {
+        setEditdata(items)
+    }
+
     return (
         <>
             <div className="container-fluid">
@@ -35,6 +54,7 @@ const Showdata = () => {
                                 <th>Title</th>
                                 <th>Description</th>
                                 <th>Price</th>
+                                <th>Rate</th>
                                 <th>Image</th>
                                 <th colSpan={2}>Action</th>
                             </tr>
@@ -52,14 +72,15 @@ const Showdata = () => {
                                             <div><s>₹{items.oldprice}</s></div>
                                             <div>₹{items.newprice}</div>
                                         </td>
+                                        <td>{items.rate}%</td>
                                         <td>
                                             <img src={items.image} alt="" style={imgset} />
                                         </td>
                                         <td>
-                                            <button className='btn btn-success'>Edit</button>
+                                            <button className='btn btn-success' data-bs-toggle="modal" data-bs-target="#updateproduct" onClick={() => handleEdit(items)}>Edit</button>
                                         </td>
                                         <td>
-                                            <button className='btn btn-danger'>Delete</button>
+                                            <button className='btn btn-danger' onClick={() => deletedata(items.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -68,6 +89,8 @@ const Showdata = () => {
                     </table>
                 </div>
             </div>
+
+            <Updatedata inputUpdate={editdata} setinputupdate={setEditdata} changeData={fetchdata} />
         </>
     )
 }
