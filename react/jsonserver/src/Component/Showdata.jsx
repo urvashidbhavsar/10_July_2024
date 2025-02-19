@@ -26,7 +26,7 @@ const Showdata = () => {
 
     const deletedata = (id) => {
         if (confirm("Are you sure to want to delete this data?")) {
-            const res = fetch(`http://localhost:3000/products/${id}`, {
+           fetch(`http://localhost:3000/products/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

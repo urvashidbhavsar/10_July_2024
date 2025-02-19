@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 const Updatedata = ({ inputUpdate, setinputupdate, changeData }) => {
+    // const [inputUpdate, setinputupdate] = useState()
     const caterogies = ["Laptop", "Smart watch", "Head Phone", "Computer Accessories", "Gaming Laptop", "Cameras", "Tablets", "Soundbar Speakers", "Earbirds"]
 
     const handlechange = (e) => {
@@ -50,6 +51,9 @@ const Updatedata = ({ inputUpdate, setinputupdate, changeData }) => {
                         <div className="modal-body">
                             <form>
                                 <div className="row g-3">
+                                    <div className="col-12">
+                                        <input type="number" name="id" placeholder='Brand' className='form-control' value={inputUpdate.id} readOnly />
+                                    </div>
                                     <div className="col-12">
                                         <input type="text" name="brand" placeholder='Brand' className='form-control' onChange={handlechange} value={inputUpdate.brand} />
                                     </div>
