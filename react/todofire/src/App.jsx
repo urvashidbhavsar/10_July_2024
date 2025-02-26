@@ -1,6 +1,7 @@
 import Addtodo from './Addtodo'
 import './App.css'
 import Showtodos from './Showtodos'
+import Todo from './Todo'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Addtodo />
       <Showtodos />
+      {/* <Todo /> */}
     </>
   )
 }

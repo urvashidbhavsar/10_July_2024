@@ -12,7 +12,7 @@ const Addtodo = () => {
         if (title !== "") {
             await addDoc(collection(db, "todos"), {
                 title,
-                completed: true,
+                completed: false,
             })
             alert("Data added Successfully!!!")
             setTitle("")
