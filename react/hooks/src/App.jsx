@@ -27,13 +27,13 @@ function App() {
       {/* <Fetchdata/> */}
       {/* <UseRefex /> */}
       {/* <VideoPlay /> */}
-      {/* <Mathex /> */}
+      <Mathex />
       {/* <Arithmetic /> */}
       {/* <Usecontextexample /> */}
       {/* <Settheme /> */}
       {/* <Calculation /> */}
       {/* <ExpensiveCalc /> */}
-      <Fetchapi />
+      {/* <Fetchapi /> */}
     </>
   )
 }

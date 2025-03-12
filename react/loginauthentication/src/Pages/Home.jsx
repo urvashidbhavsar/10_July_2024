@@ -11,14 +11,11 @@ const Home = () => {
     useEffect(() => {
         const fetchdata = async () => {
             const user = auth.currentUser;
-
             if (user) {
                 const userdata = await getDoc(doc(db, "users", user.uid))
-
                 if (userdata.exists()) {
                     getUser(userdata.data())
                     console.log(userdata.data());
-
                 }
             }
         }
@@ -39,8 +36,11 @@ const Home = () => {
                 userdetails ?
                     <h1>{userdetails.name} ,Welcome to home page</h1>
                     :
-                    <h1>Loading...</h1>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
             }
+            <br />
             <button onClick={logout} className='btn btn-danger'>Logout</button>
         </>
     )
