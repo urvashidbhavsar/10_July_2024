@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { addTodo } from '../Feature/todoslice'
 import { useDispatch } from 'react-redux'
 
-
 const Todopage = () => {
     const [input, setInput] = useState("")
     const dispatch = useDispatch()
@@ -10,10 +9,8 @@ const Todopage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(addTodo(input))
-
-        console.log(dispatch(addTodo(input)));
+        alert("Data added successfully");
         setInput("")
-
     }
 
     return (
