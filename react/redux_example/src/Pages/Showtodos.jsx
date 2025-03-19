@@ -55,8 +55,6 @@ const Showtodos = () => {
                                                     <button onClick={() => removeData(item.id)} className='btn btn-danger mx-1'>🧺</button>
                                                 </>
                                         }
-
-
                                     </td>
                                 </tr>
                             )
